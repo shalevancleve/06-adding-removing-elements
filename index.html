@@ -41,24 +41,24 @@
           <form>
             <div class="mb-3">
               <label for="name" class="form-label visually-hidden">Name</label>
-              <input type="text" id="name" class="form-control" placeholder="Name" autofocus>
+              <input type="text" id="name" class="form-control" placeholder="Name" autofocus required>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label visually-hidden">Email</label>
-              <input type="email" id="email" class="form-control" placeholder="Email">
+              <input type="email" id="email" class="form-control" placeholder="Email" required>
             </div>
             <div class="mb-3">
               <label for="zip" class="form-label visually-hidden">Zip</label>
-              <input type="text" id="zip" class="form-control" placeholder="Zip">
+              <input type="text" id="zip" class="form-control" placeholder="Zip" required>
             </div>
             <div class="mb-3">
               <label for="party-size" class="form-label visually-hidden">Party Size</label>
-              <input type="number" id="party-size" class="form-control" placeholder="Party Size">
+              <input type="number" id="party-size" class="form-control" placeholder="Party Size" required>
             </div>
             <div class="mb-3">
               <label for="spice-level" class="form-label visually-hidden">Spice Level</label>
-              <select id="spice-level" class="form-select">
-                <option selected>Choose Adventure Level</option>
+              <select id="spice-level" class="form-select" required>
+                <option value="" disabled selected>Choose Adventure Level</option>
                 <option value="mild">Mild</option>
                 <option value="med">Medium</option>
                 <option value="spicy">Spicy</option>
@@ -71,12 +71,12 @@
               </label>
             </div>
             <div class="form-check mb-3">
-              <input class="form-check-input" type="checkbox" id="accept-terms">
+              <input class="form-check-input" type="checkbox" id="accept-terms" required>
               <label class="form-check-label" for="accept-terms">
                 I accept that I have no idea where I'll dine, and that's OK.
               </label>
             </div>
-            <button type="submit" class="btn btn-lg btn-primary">Book My Mystery Meal!</button>
+            <button type="submit" class="btn btn-lg btn-primary mt-2">Book My Mystery Meal!</button>
           </form>
         </div>
       </div>
