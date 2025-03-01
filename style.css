@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   background-color: #f5f5f7;
   color: #1d1d1f;
   min-height: 100vh;
@@ -31,7 +31,7 @@ body {
   width: 100%;
   max-width: 550px;
   background-color: #ffffff;
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
@@ -45,27 +45,29 @@ header {
 }
 
 header h1 {
-  font-size: 32px;
-  font-weight: 600;
-  letter-spacing: -0.32px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin: 0;
 }
 
 .fa-ban {
-  color: #ff3b30;
-  font-size: 28px;
+  color: #9e2a2b;
+  font-size: 30px;
 }
 
 .tagline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-style: italic;
   text-align: center;
   color: #86868b;
-  margin: 16px 0 32px;
-  font-style: italic;
-  letter-spacing: -0.16px;
+  margin: 5px 0 38px;
 }
 
 #todo-form {
   display: flex;
-  gap: 12px;
   margin: 0 32px 32px;
 }
 
@@ -73,9 +75,9 @@ input[type="text"] {
   flex: 1;
   padding: 14px 20px;
   border: 1px solid #d2d2d7;
-  border-radius: 12px;
-  font-family: inherit;
-  font-size: 15px;
+  border-radius: 12px 0 0 12px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
   color: #1d1d1f;
   background-color: #f5f5f7;
   transition: all 0.25s ease;
@@ -87,21 +89,20 @@ input[type="text"]:focus {
 
 .btn-primary {
   padding: 14px 24px;
-  background-color: #0071e3;
+  background-color: #9e2a2b;
   color: white;
   border: none;
-  border-radius: 12px;
+  border-radius: 0 12px 12px 0;
+  margin-left: -1px; /* Prevents double border effect */
+  font-family: 'Roboto', Arial, sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 16px;
   cursor: pointer;
   transition: all 0.25s ease;
-  letter-spacing: -0.16px;
 }
 
 .btn-primary:hover {
-  background-color: #0077ed;
-  transform: translateY(-1px);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #c04648;
 }
 
 .btn-primary:active {
