@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TO-DON'T | Procrastination</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <div class="app-container">
+    <header>
+      <div class="logo">
+        <i class="fa-solid fa-ban"></i>
+        <h1>TO-DON'T</h1>
+      </div>
+    </header>
+
+    <main>
+      <p class="tagline">Because some things are better left undone</p>
+      <form id="todo-form" class="input-container">
+        <input type="text" id="todo-input" placeholder="What should you avoid doing?" />
+        <button type="submit" class="btn-primary">Don't Do It</button>
+      </form>
+
+      <ul id="todo-list">
+        <!-- Todo items will be added here by JavaScript -->
+      </ul>
+    </main>
+
+    <footer>
+      <p>Made with <span class="heart">❤</span> using modern web technologies</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
